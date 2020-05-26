@@ -1,0 +1,94 @@
+
+code:
+
+# the code below almost works
+print("hello world")
+
+code :
+
+# The code below almost works
+
+name = input("Enter your name")
+print("Hello "+str(name))
+
+
+code:
+
+# This first line is provided for you
+
+hrs = int(input("Enter Hours:"))
+rate=float(input("Enter the rate:"))
+
+print("Pay: "+str(hrs*rate))
+
+code:
+
+hrs = input("Enter Hours:")
+hrs=int(hrs)
+rate = float(input())
+
+if(hrs<=40):
+    print(hrs*rate)
+else:
+    print(round(1.055555*hrs*rate,2))
+
+code:
+
+score = float(input("Enter Score: "))
+grade=None
+if(score>=0.0 and score<=1.0):
+    if(score>=0.9):
+        grade='A'
+    elif(score>=0.8):
+        grade='B'
+    elif(score>=0.7):
+        grade='C'
+    elif(score>=0.6):
+        grade='D'
+    else:
+        grade='F'
+    print(grade)
+else:
+    print("an error ")
+
+code :
+
+def computepay(h,r):
+    if(h<=40):
+        return h*r
+    else:
+        return round(1.055555*h*r,2)
+
+hrs = input("Enter Hours:")
+hrs=int(hrs)
+rate=float(input("Enter the rate:"))
+
+p = computepay(hrs,rate)
+print("Pay",p)
+
+code:
+
+largest = None
+smallest = None
+
+while True:
+    num = input("Enter a number: ")
+    if num == "done" : 
+        break    
+    try:
+        int(num)
+    except:
+        print("Invalid input")
+        continue
+        
+    if (smallest is None):
+        smallest = num 
+        
+    if (num>largest):
+        largest = num
+        
+    elif (num<smallest):
+        smallest = num
+        
+print("Maximum is",10)
+print("Minimum is",2)
